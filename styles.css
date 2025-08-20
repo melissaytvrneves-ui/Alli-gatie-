@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  background: #7a0c2e; /* vermelho vinho combinando com a playlist */
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0,0,0,0.3);
+  border-bottom: 3px solid rgba(255,255,255,0.3);
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 0;
+  animation: fadeInDown 1s ease-out;
+}
+
+header p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* Cantor info */
+.cantor-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.cantor-foto {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.cantor-texto {
+  max-width: 500px;
+}
+
+/* Playlist destaque */
+.playlist-destaque {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.capa-destaque {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.capa-destaque:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,255,255,0.9);
+}
+
+/* Outras playlists */
+.outras-playlists {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.playlists-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.playlist-item {
+  width: 220px;
+  text-align: center;
+}
+
+.playlist-item h3 {
+  margin: 10px 0 5px;
+}
+
+.playlist-item p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.capa-musica {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.capa-musica:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.9);
+}
+
+/* Animações */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
